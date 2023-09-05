@@ -1,0 +1,117 @@
+/* Todo.module.css */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todoSection {
+    flex: 1;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  
+  .logSection {
+    flex: 1;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .addTodo button,
+  .removeButton {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .addTodo button:hover,
+  .removeButton:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #7030a0; /* 보라색 */
+  }
+  
+  .addTodo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .addTodo input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .todoList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todoItem {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    background-color: #ffffff;
+  }
+  
+  .todoItem.completedTodo {
+    background-color: #f0f0f0;
+  }
+  
+  .todoItem input {
+    margin-right: 1rem;
+  }
+  
+  .logHeader {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+  
+  .logList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .logItem {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333333;
+  }
+  
